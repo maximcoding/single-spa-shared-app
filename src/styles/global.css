@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+:root {
+  /* 1rem === 10px, but remain responsive to user font size settings */
+  font-size: 62.5%;
+  --navbar-height: 6rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* default font size is 16px */
+  font-size: 3.6rem;
+  background-color: #efefef;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[id="single-spa-application:login"] {
+  height: 100%;
+}
+
+[id="single-spa-application:layout"] {
+  order: 1;
+}
+
+[id="single-spa-application:first-angular-app"],
+[id="single-spa-application:first-react-app"] {
+  order: 2;
+}
